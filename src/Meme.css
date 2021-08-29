@@ -1,0 +1,49 @@
+.Meme {
+	position:relative;
+	display: inline-block;
+	margin: 5px;
+}
+
+.imageContainer {
+	position: relative;
+	width: fit-content;
+}
+
+img {
+	display: block;
+	max-width: 300px;
+	height: auto;
+}
+
+.topText{
+	position: absolute;
+	/* display: inline-block; */
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	/* using background color to handle scenarios
+	where the image is too dark to support black text */
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.bottomText {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	/* using background color to handle scenarios
+	where the image is too dark to support black text */
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.buttonContainer {
+	display: flex;
+	justify-content: center;
+	margin-top: 5px;
+}
